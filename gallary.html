@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Varad Packaging Logo"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="amenities.html">Amenities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <main>
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item">
+                    <img src="p3.jpg" alt="Packaging Equipment">
+                </div>
+                <div class="gallery-item">
+                    <img src="p4.jpg" alt="Packaging Supplies">
+                </div>
+                <div class="gallery-item">
+                    <img src="p5.jpg" alt="Sealing Machines">
+                </div>
+                <div class="gallery-item">
+                    <img src="p6.jpg" alt="Carton Boxes">
+                </div>
+                <div class="gallery-item">
+                    <img src="p7.jpg" alt="Wrapping Rolls">
+                </div>
+                <div class="gallery-item">
+                    <img src="p8.jpg" alt="Storage Solutions">
+                </div>
+                <div class="gallery-item">
+                    <img src="p9.jpg" alt="Packaging Workshop">
+                </div>
+                <div class="gallery-item">
+                    <img src="p10.jpg" alt="Finished Packaging Products">
+                </div>
+                <div class="gallery-item">
+                    <img src="p11.jpg" alt="Custom Packaging Designs">
+                </div>
+                <div class="gallery-item">
+                    <img src="p12.jpg" alt="Machinery in Action">
+                </div>
+                <div class="gallery-item">
+                    <img src="p13.jpg" alt="Eco-Friendly Packaging">
+                </div>
+                <div class="gallery-item">
+                    <img src="3232.jpg" alt="Innovative Packaging Ideas">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Varad Packaging. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- Lightbox Script -->
+    <script>
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', function () {
+                const lightbox = document.createElement('div');
+                lightbox.className = 'lightbox';
+                document.body.appendChild(lightbox);
+                const lightboxImg = document.createElement('img');
+                lightboxImg.src = img.src;
+                lightbox.appendChild(lightboxImg);
+                lightbox.addEventListener('click', () => {
+                    lightbox.remove();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

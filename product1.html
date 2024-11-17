@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="amenities.html">Amenities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <main>
+        <!-- Back Button -->
+     <div class="back-button">
+        <button onclick="history.back()">Back</button>
+    </div>
+        <section class="product-details-container">
+            <div class="product-detail">
+                <img src="multibox1.jpg" alt="Large Product Box">
+                <h2>Large</h2>
+                <p>Price: ₹11.50</p>
+                <p>Set(5): ₹57.5</p>
+                <p>Size: 30x45x15 cm</p>
+                <p>Material: Recyclable cardboard</p>
+                <p>Description: A versatile and durable box suitable for various packaging needs.</p>
+            </div>
+
+            <div class="product-detail">
+                <img src="multibox1.jpg" alt="Medium Product Box">
+                <h2>Medium</h2>
+                <p>Price: ₹8.50</p>
+                <p>Set(5): ₹42.5</p>
+                <p>Size: 20x30x10 cm</p>
+                <p>Material: Recyclable cardboard</p>
+                <p>Description: Ideal for medium-sized packaging needs.</p>
+            </div>
+
+            <div class="product-detail">
+                <img src="multibox1.jpg" alt="Small Product Box">
+                <h2>Small</h2>
+                <p>Price: ₹5.50</p>
+                <p>Set(5): ₹27.5</p>
+                <p>Size: 10x15x5 cm</p>
+                <p>Material: Recyclable cardboard</p>
+                <p>Description: Perfect for compact packaging needs.</p>
+            </div>
+        
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Varad Packaging. All rights reserved.</p>
+    </footer>
+    <style>
+        /* Back Button Style */
+        .back-button {
+            position: sticky;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+        .back-button button {
+            padding: 8px 16px;
+            font-size: 1rem;
+            background-color: #22346952;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .back-button button:hover {
+            background-color: #1e31544b;
+        }
+    </style>
+</body>
+</html>

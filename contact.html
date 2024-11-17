@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Varad Packaging for custom packaging solutions, fast delivery, and exceptional customer support.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Varad Packaging</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH4Pf6y7mWr92SNNExw8OzA/hQKLT3hCq/vzj9bsGZZRrP+PRTxaYYZ1bqYrv+ZWf9RBKmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #3b8d99, #6b6b83);
+            color: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+        }
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #f5f5f5;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #333;
+        }
+        .form-group textarea {
+            height: 100px;
+            resize: none;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #28a745;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #218838;
+        }
+        /* Map and Directions Button */
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .get-directions-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            text-align: center;
+        }
+        .get-directions-btn:hover {
+            background-color: #218838;
+        }
+        /* Social Links */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #f5f5f5;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+     <div class="back-button">
+        <button onclick="history.back()" aria-label="Go back to the previous page">Back</button>
+    </div>
+        <h2>Contact Us - Varad Packaging</h2>
+
+        <!-- Contact Form -->
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces allowed">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <!-- Embedded Map -->
+        <div class="map">
+            <h3>Our Location:</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.869178732613!2d74.6165293!3d19.6326038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc8bf64de5ff6d%3A0x7ecc936a1b93479c!2sVarad%20Packaging!5e0!3m2!1sen!2sus!4v1699225556781!5m2!1sen!2sus" 
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- Get Directions Button -->
+        <a href="https://www.google.com/maps/dir/?api=1&destination=19.633699,74.6186903" target="_blank" class="get-directions-btn"  aria-label="Get directions to Varad Packaging">
+            Get Directions
+        </a>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <p>Follow us:</p>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" aria-label="Visit our YouTube channel">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    <style>
+        /* Back Button Style */
+        .back-button {
+            position: sticky;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+        }
+        .back-button button {
+            padding: 8px 16px;
+            font-size: 1rem;
+            background-color: #22346952;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .back-button button:hover {
+            background-color: #1e31544b;
+        }
+    </style>
+</body>
+</html>
